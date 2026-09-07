@@ -1,0 +1,30 @@
+# Credentials and private keys
+.config/gh/hosts.yml
+**/*token*
+**/*secret*
+**/*credentials*
+*.key
+*.pem
+
+# Shell/application state
+*history*
+*.log
+*.db
+*.db-shm
+*.db-wal
+Cookies*
+.config/dconf/
+.config/discord/
+.config/mozilla/
+.config/pulse/
+.config/session/
+.config/spotify/
+.config/fish/fish_variables
+
+# Generated files and backups
+*.zwc
+.zcompdump*
+*~
+*.bak
+*.backup-*
+.config/gtk-4.0/thumbnail.png

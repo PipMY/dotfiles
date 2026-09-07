@@ -1,0 +1,48 @@
+# ~/.config/starship.toml
+
+# Use a clean, simple layout
+format = """
+[░▒▓](fg:#32302f)\
+$username\
+$hostname\
+[](bg:#cc241d fg:#32302f)\
+$directory\
+[](fg:#cc241d bg:#458588)\
+$git_branch\
+$git_status\
+[](fg:#458588 bg:#b16286)\
+$c\
+$elixir\
+$elm\
+$golang\
+$haskell\
+$java\
+$julia\
+$nodejs\
+$nim\
+$rust\
+[](fg:#b16286)\
+\n$character"""
+
+[username]
+show_always = true
+style_user = "bg:#32302f fg:#ebdbb2"
+format = "[$user]($style)"
+
+[directory]
+style = "bg:#cc241d fg:#ebdbb2"
+format = "[ $path ]($style)"
+truncation_length = 3
+
+[git_branch]
+symbol = " "
+style = "bg:#458588 fg:#282828"
+format = "[ $symbol$branch ]($style)"
+
+[git_status]
+style = "bg:#458588 fg:#282828"
+format = "[[$all_status$ahead_behind]($style)]($style)"
+
+[character]
+success_symbol = "[❯](bold #fe8019)"
+error_symbol = "[❯](bold #cc241d)"

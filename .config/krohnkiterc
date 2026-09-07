@@ -1,0 +1,8 @@
+[General]
+noTileBorder=true
+screenGapBetween=6
+screenGapBottom=8
+screenGapLeft=8
+screenGapRight=8
+screenGapTop=8
+soleWindowNoBorders=true

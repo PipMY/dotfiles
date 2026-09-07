@@ -1,0 +1,13 @@
+[Libinput][1133][16531][Logitech PRO X]
+PointerAccelerationProfile=1
+
+[Libinput][1739][52925][PNP0C50:00 06CB:CEBD Touchpad]
+ClickMethod=2
+LmrTapButtonMap=true
+NaturalScroll=true
+PointerAccelerationProfile=1
+ScrollFactor=0.5
+
+[Mouse]
+X11LibInputXAccelProfileFlat=true
+XLbInptNaturalScroll=true

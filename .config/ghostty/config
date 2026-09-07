@@ -1,0 +1,12 @@
+# Managed by ~/.local/bin/rice-theme
+font-size = 12
+background = #14110d
+foreground = #e8dfcf
+selection-background = #394b38
+selection-foreground = #f2eadc
+cursor-color = #719e71
+background-opacity = 0.94
+background-blur = true
+window-padding-x = 10
+window-padding-y = 8
+window-padding-balance = true

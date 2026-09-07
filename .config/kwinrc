@@ -1,0 +1,38 @@
+[Desktops]
+Id_1=794562f3-9634-4b3c-b30d-0b47e326a5d9
+Id_2=8dbade6a-bae6-4998-b8f0-16da4a50801e
+Id_3=d08754e8-03a8-4918-9076-6c2dba6fb850
+Name_2=Workspace 2
+Name_3=Workspace 3
+Number=3
+Rows=1
+
+[Libinput][1739][52925][PNP0C50:00 06CB:CEBD Touchpad]
+ClickMethod=2
+LmrTapButtonMap=true
+NaturalScroll=true
+ScrollFactor=0.5
+TapToClick=true
+
+[Plugins]
+blurEnabled=true
+contrastEnabled=true
+krohnkiteEnabled=true
+
+[Tiling][48467df0-42dd-5352-afa0-e20e4da54e68]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][794562f3-9634-4b3c-b30d-0b47e326a5d9][ba280017-b081-47af-b165-f14a5bfcae4b]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][8dbade6a-bae6-4998-b8f0-16da4a50801e][ba280017-b081-47af-b165-f14a5bfcae4b]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][d08754e8-03a8-4918-9076-6c2dba6fb850][ba280017-b081-47af-b165-f14a5bfcae4b]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Xwayland]
+Scale=1.5

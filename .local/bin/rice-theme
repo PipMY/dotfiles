@@ -1,0 +1,52 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+choice=${1:-}
+config="$HOME/.config/ghostty/config"
+mkdir -p "$(dirname "$config")"
+
+case "$choice" in
+midnight)
+  scheme=MidnightGlass
+  label='Midnight Glass'
+  background='#080d13'
+  foreground='#dce7eb'
+  selection_background='#23434e'
+  selection_foreground='#edf5f7'
+  cursor='#69b2c3'
+  ;;
+walnut)
+  scheme=WalnutForest
+  label='Walnut Forest'
+  background='#14110d'
+  foreground='#e8dfcf'
+  selection_background='#394b38'
+  selection_foreground='#f2eadc'
+  cursor='#719e71'
+  ;;
+*)
+  echo 'Usage: rice-theme {midnight|walnut}' >&2
+  exit 2
+  ;;
+esac
+
+plasma-apply-colorscheme "$scheme"
+
+cat >"$config" <<EOF
+# Managed by ~/.local/bin/rice-theme
+font-size = 12
+background = $background
+foreground = $foreground
+selection-background = $selection_background
+selection-foreground = $selection_foreground
+cursor-color = $cursor
+background-opacity = 0.94
+background-blur = true
+window-padding-x = 10
+window-padding-y = 8
+window-padding-balance = true
+EOF
+
+qdbus6 org.kde.KWin /KWin org.kde.KWin.reconfigure >/dev/null 2>&1 || true
+notify-send 'Rice theme changed' "$label — open a new Ghostty window for its palette."
+echo "Applied $label"
